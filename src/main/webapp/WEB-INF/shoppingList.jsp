@@ -8,7 +8,7 @@
     <body>
         <h1>Shopping List</h1>
         
-        <p>Hello, adam. <a href="">Logout</a></p>
+        <p>Hello, Adam. <a href="">Logout</a></p>
         
         <h2>List</h2>
         
