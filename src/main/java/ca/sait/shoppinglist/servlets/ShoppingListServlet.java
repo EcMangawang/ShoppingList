@@ -30,9 +30,14 @@ public class ShoppingListServlet extends HttpServlet {
         
         String name = (String) session.getAttribute("name");
         
+        String query = request.getQueryString();
+        
         if (name == null) {
             getServletContext().getRequestDispatcher("/WEB-INF/register.jsp").forward(request, response);
-        } else {
+        } else if (query != null && query.contains("logout")) {
+            session.invalidate();
+            getServletContext().getRequestDispatcher("/WEB-INF/register.jsp").forward(request, response);           
+        }else {
             getServletContext().getRequestDispatcher("/WEB-INF/shoppingList.jsp").forward(request, response);
         }
         
