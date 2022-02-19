@@ -4,14 +4,19 @@
     Author     : emmar
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Register</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Register</h1>
+        
+        <form>
+            <label for="name">Username:</label>
+            <input type="text" name="name" id="name"><!-- input box where user enters username -->
+            
+            <button type="submit">Register name</button>
+        </form>
     </body>
 </html>
